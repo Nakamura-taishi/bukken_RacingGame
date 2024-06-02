@@ -253,8 +253,8 @@ public class t_Runner : MonoBehaviour
                     }
                     else if (motor1 < 0)
                     {
-                        axleInfo.leftWheel.motorTorque = motor1;
-                        axleInfo.rightWheel.motorTorque = motor1;
+                        axleInfo.leftWheel.motorTorque = motor1 * 2;
+                        axleInfo.rightWheel.motorTorque = motor1 * 2;
                     }
                     else
                     {

@@ -1404,6 +1404,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RacingCar
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 21dfac20e723aa945ba5ea6ac33620bb, type: 3}
+      propertyPath: m_TagString
+      value: Car
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

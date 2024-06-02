@@ -17,7 +17,7 @@ public class t_BoostMeterInside : MonoBehaviour
         bool finished = t_GoalJudgement.finished;
         if (finished == false)
         {
-            t_Runner car = GameObject.FindWithTag("CAR").GetComponent<t_Runner>();
+            t_Runner car = GameObject.Find("t_playerCAR").GetComponent<t_Runner>();
             boost = car.NowEngine;
             this.transform.localScale = new Vector3(1, (boost / 1000), 0);
         }

@@ -5101,7 +5101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c62479c3465024b48b42983b1b2eeaaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SkidTrailPrefab: {fileID: 400000, guid: 4b6aa99de5d21424eab6ae279f31475b, type: 3}
+  SkidTrailPrefab: {fileID: 400000, guid: db3349ec8615d1843869853490a59f8c, type: 3}
   skidParticles: {fileID: 0}
 --- !u!1 &5488527362686196211
 GameObject:
@@ -5319,7 +5319,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c62479c3465024b48b42983b1b2eeaaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SkidTrailPrefab: {fileID: 400000, guid: 4b6aa99de5d21424eab6ae279f31475b, type: 3}
+  SkidTrailPrefab: {fileID: 400000, guid: db3349ec8615d1843869853490a59f8c, type: 3}
   skidParticles: {fileID: 0}
 --- !u!1 &5488527363780563975
 GameObject:
@@ -5502,7 +5502,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c62479c3465024b48b42983b1b2eeaaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SkidTrailPrefab: {fileID: 400000, guid: 4b6aa99de5d21424eab6ae279f31475b, type: 3}
+  SkidTrailPrefab: {fileID: 400000, guid: db3349ec8615d1843869853490a59f8c, type: 3}
   skidParticles: {fileID: 0}
 --- !u!1 &5488527363826023354
 GameObject:
@@ -5852,7 +5852,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c62479c3465024b48b42983b1b2eeaaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SkidTrailPrefab: {fileID: 400000, guid: 4b6aa99de5d21424eab6ae279f31475b, type: 3}
+  SkidTrailPrefab: {fileID: 400000, guid: db3349ec8615d1843869853490a59f8c, type: 3}
   skidParticles: {fileID: 0}
 --- !u!1 &5488527364302041785
 GameObject:
@@ -6046,6 +6046,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 21dfac20e723aa945ba5ea6ac33620bb, type: 3}
       propertyPath: m_Name
       value: RacingCar
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 21dfac20e723aa945ba5ea6ac33620bb, type: 3}
+      propertyPath: m_TagString
+      value: Car
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

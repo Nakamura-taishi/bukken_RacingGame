@@ -19,7 +19,7 @@ public class t_BoostScript : MonoBehaviour
         bool finished = t_GoalJudgement.finished;
         if(finished == false)
         {
-            t_Runner car = GameObject.FindWithTag("CAR").GetComponent<t_Runner>();
+            t_Runner car = GameObject.Find("t_playerCAR").GetComponent<t_Runner>();
             boost = car.NowEngine;
             boostText.text = boost.ToString();
         }
