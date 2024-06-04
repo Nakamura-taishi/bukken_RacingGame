@@ -14,7 +14,6 @@ public class t_SpeedScript : MonoBehaviour
         Rigidbody steer5 = GameObject.Find("t_playerCAR").GetComponent<Rigidbody>();
         float_speed = steer5.velocity.magnitude;
         speed = (float_speed / 2) * (float_speed / 5);
-        Debug.Log(speed);
         speedText.text = Math.Round(speed).ToString();
     }
 }

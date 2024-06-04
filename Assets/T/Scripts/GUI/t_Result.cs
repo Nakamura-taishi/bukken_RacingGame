@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class t_Result : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class t_Result : MonoBehaviour
     public GameObject Panel;
     public GameObject FinishText;
     public TextMeshProUGUI GoalTime_Text;
+    public Image image;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +39,7 @@ public class t_Result : MonoBehaviour
         string GoalTime = t_TimeCounter.GoalTime;
         FinishText.SetActive(false);
         Panel.SetActive(true);
+        image.enabled = false;
         GoalTime_Text.text = GoalTime;
         Time.timeScale = 0;
     }
