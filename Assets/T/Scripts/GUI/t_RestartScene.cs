@@ -9,6 +9,5 @@ public class t_RestartScene : MonoBehaviour
     void Start()
     {
         SceneManager.LoadScene("Racing", LoadSceneMode.Additive);
-        SceneManager.LoadScene("GUIt+", LoadSceneMode.Additive);
     }
 }
