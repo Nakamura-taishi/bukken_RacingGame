@@ -18,8 +18,8 @@ public class m_CheckPointManager : MonoBehaviour
         }
         
         List<Collider> result = new();
-        for (int lap = 0; lap <= lastLap; lap++) {
-            for (int i = 0; i < checkPoints.Length; i++)
+        for (int lap = lastLap; lap >= 0; lap--) {
+            for (int i = checkPoints.Length - 1; i >= 0; i--)
             {
                 if (!pointRanking[i].ContainsKey(lap)) continue;
                 result.AddRange(pointRanking[i][lap]);
