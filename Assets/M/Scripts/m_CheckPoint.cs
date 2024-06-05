@@ -50,7 +50,7 @@ public class m_CheckPoint : MonoBehaviour
                 {
                     if (!checkPointManager.carLapCount.ContainsKey(collision)) checkPointManager.carLapCount.Add(collision, 0);
                     checkPointManager.carLapCount[collision] += 1;
-                    if (checkPointManager.carLapCount[collision] == checkPointManager.lastLap + 1)
+                    if (checkPointManager.carLapCount[collision] == checkPointManager.lastLap)
                     {
                         checkPointManager.lastRanking.Add(collision);
                     }
@@ -70,17 +70,16 @@ public class m_CheckPoint : MonoBehaviour
             {
                 ranking.Add(collision);
             }
-
-            // carに checkPointAfter.thisTransform を渡す
         }
     }
 
     public Dictionary<int, List<Collider>> GetCurrentRankingFromPoint()
     {
-        ranking.Sort((a, b) => Mathf.RoundToInt(Vector3.SqrMagnitude(b.transform.position - thisTransform.position) - Vector3.SqrMagnitude(a.transform.position - thisTransform.position)));
+        ranking.Sort((a, b) => Mathf.RoundToInt(Vector3.SqrMagnitude(b.transform.position - thisTransform.position) - Vector3.SqrMagnitude(a.transform.position - thisTransform.position)));  // 降順にソート
         Dictionary<int, List<Collider>> result = new();
         for (int i = 0; i < ranking.Count; i++)
         {
+            if (!checkPointManager.carLapCount.ContainsKey(ranking[i])) checkPointManager.carLapCount.Add(ranking[i], 0);
             int lapCount = checkPointManager.carLapCount[ranking[i]];
             if (!result.ContainsKey(lapCount))
             {

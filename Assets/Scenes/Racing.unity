@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.28323016, g: 0.32387468, b: 0.4617587, a: 1}
+  m_IndirectSpecularColor: {r: 0.28318414, g: 0.32434857, b: 0.4612285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -197,6 +197,10 @@ PrefabInstance:
       propertyPath: checkPointManager
       value: 
       objectReference: {fileID: 1806668609}
+    - target: {fileID: 6772271848176648527, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
+      propertyPath: m_Size.x
+      value: 204.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -409
@@ -274,9 +278,13 @@ PrefabInstance:
       propertyPath: checkPointManager
       value: 
       objectReference: {fileID: 1806668609}
+    - target: {fileID: 6772271848176648527, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
+      propertyPath: m_Size.x
+      value: 180.9
+      objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 108
+      value: 86.3
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -505,6 +513,10 @@ PrefabInstance:
       propertyPath: checkPointManager
       value: 
       objectReference: {fileID: 1806668609}
+    - target: {fileID: 6772271848176648527, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
+      propertyPath: m_Size.x
+      value: 121.6
+      objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 142.6
@@ -582,9 +594,13 @@ PrefabInstance:
       propertyPath: checkPointManager
       value: 
       objectReference: {fileID: 1806668609}
+    - target: {fileID: 6772271848176648527, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
+      propertyPath: m_Size.x
+      value: 250.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -375.4
+      value: -387.7
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -592,7 +608,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 82.5
+      value: 67.9
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1001,6 +1017,10 @@ PrefabInstance:
       propertyPath: checkPointManager
       value: 
       objectReference: {fileID: 1806668609}
+    - target: {fileID: 6772271848176648527, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
+      propertyPath: m_Size.x
+      value: 212.8
+      objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -351.3
@@ -1078,6 +1098,10 @@ PrefabInstance:
       propertyPath: checkPointManager
       value: 
       objectReference: {fileID: 1806668609}
+    - target: {fileID: 6772271848176648527, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
+      propertyPath: m_Size.x
+      value: 119.2
+      objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 284.3
@@ -1186,6 +1210,10 @@ PrefabInstance:
       propertyPath: checkPointManager
       value: 
       objectReference: {fileID: 1806668609}
+    - target: {fileID: 6772271848176648527, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
+      propertyPath: m_Size.x
+      value: 182.9
+      objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -52.3
@@ -1263,6 +1291,10 @@ PrefabInstance:
       propertyPath: checkPointManager
       value: 
       objectReference: {fileID: 1806668609}
+    - target: {fileID: 6772271848176648527, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
+      propertyPath: m_Size.x
+      value: 200.6
+      objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -121.3
@@ -1476,7 +1508,7 @@ PrefabInstance:
       objectReference: {fileID: 1806668609}
     - target: {fileID: 6772271848176648527, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_Size.x
-      value: 37.4
+      value: 194.1
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1555,6 +1587,14 @@ PrefabInstance:
       propertyPath: checkPointManager
       value: 
       objectReference: {fileID: 1806668609}
+    - target: {fileID: 6772271848176648527, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
+      propertyPath: m_Size.x
+      value: 281.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6772271848176648527, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
+      propertyPath: m_Center.x
+      value: -12.7
+      objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 441.5
@@ -1569,7 +1609,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.5187731
+      value: -0.051464293
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1577,7 +1617,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.854912
+      value: 0.99867487
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalRotation.z
@@ -1589,7 +1629,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 242.5
+      value: 185.9
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -1632,6 +1672,10 @@ PrefabInstance:
       propertyPath: checkPointManager
       value: 
       objectReference: {fileID: 1806668609}
+    - target: {fileID: 6772271848176648527, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
+      propertyPath: m_Size.x
+      value: 264.8
+      objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 422.9
@@ -1646,19 +1690,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7531618
+      value: 0.2923718
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.6578354
+      value: 0.9563047
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1666,7 +1710,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 82.27
+      value: 146
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -1986,6 +2030,10 @@ PrefabInstance:
       propertyPath: checkPointManager
       value: 
       objectReference: {fileID: 1806668609}
+    - target: {fileID: 6772271848176648527, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
+      propertyPath: m_Size.x
+      value: 138.6
+      objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 134.2
@@ -2000,7 +2048,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.99306846
+      value: -0.8660254
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalRotation.x
@@ -2008,7 +2056,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.117537476
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalRotation.z
@@ -2020,7 +2068,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 346.5
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -2063,6 +2111,10 @@ PrefabInstance:
       propertyPath: checkPointManager
       value: 
       objectReference: {fileID: 1806668609}
+    - target: {fileID: 6772271848176648527, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
+      propertyPath: m_Size.x
+      value: 119.8
+      objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -107.2
@@ -2250,6 +2302,10 @@ PrefabInstance:
       propertyPath: checkPointManager
       value: 
       objectReference: {fileID: 1806668609}
+    - target: {fileID: 6772271848176648527, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
+      propertyPath: m_Size.x
+      value: 170.4
+      objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 217.4
@@ -2626,6 +2682,10 @@ PrefabInstance:
       propertyPath: checkPointManager
       value: 
       objectReference: {fileID: 1806668609}
+    - target: {fileID: 6772271848176648527, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
+      propertyPath: m_Size.x
+      value: 139.4
+      objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -90.7
@@ -3217,6 +3277,10 @@ PrefabInstance:
       propertyPath: checkPointManager
       value: 
       objectReference: {fileID: 1806668609}
+    - target: {fileID: 6772271848176648527, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
+      propertyPath: m_Size.x
+      value: 317.7
+      objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -295.4
@@ -3515,6 +3579,10 @@ PrefabInstance:
       propertyPath: checkPointManager
       value: 
       objectReference: {fileID: 1806668609}
+    - target: {fileID: 6772271848176648527, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
+      propertyPath: m_Size.x
+      value: 324.3
+      objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -271.7
@@ -3529,7 +3597,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.9698722
+      value: -0.7413906
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalRotation.x
@@ -3537,7 +3605,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.24361476
+      value: -0.67107373
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalRotation.z
@@ -3549,7 +3617,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 388.2
+      value: 444.3
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -3674,6 +3742,10 @@ PrefabInstance:
       propertyPath: checkPointManager
       value: 
       objectReference: {fileID: 1806668609}
+    - target: {fileID: 6772271848176648527, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
+      propertyPath: m_Size.x
+      value: 336.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 467.7
@@ -3688,7 +3760,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.10305303
+      value: 0.14176533
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalRotation.x
@@ -3696,7 +3768,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.99467593
+      value: 0.98990035
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalRotation.z
@@ -3708,7 +3780,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 168.17
+      value: 163.7
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -3981,6 +4053,10 @@ PrefabInstance:
       propertyPath: checkPointManager
       value: 
       objectReference: {fileID: 1806668609}
+    - target: {fileID: 6772271848176648527, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
+      propertyPath: m_Size.x
+      value: 171.4
+      objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 292.3
@@ -4702,6 +4778,10 @@ PrefabInstance:
       propertyPath: checkPointManager
       value: 
       objectReference: {fileID: 1806668609}
+    - target: {fileID: 6772271848176648527, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
+      propertyPath: m_Size.x
+      value: 188.8
+      objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -414.1
@@ -5001,6 +5081,10 @@ PrefabInstance:
       propertyPath: checkPointManager
       value: 
       objectReference: {fileID: 1806668609}
+    - target: {fileID: 6772271848176648527, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
+      propertyPath: m_Size.x
+      value: 282.4
+      objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -249.1
@@ -5015,7 +5099,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.8166416
+      value: -0.7325432
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalRotation.x
@@ -5023,7 +5107,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.57714516
+      value: -0.68072057
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalRotation.z
@@ -5035,7 +5119,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 430.5
+      value: 445.8
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -5078,6 +5162,10 @@ PrefabInstance:
       propertyPath: checkPointManager
       value: 
       objectReference: {fileID: 1806668609}
+    - target: {fileID: 6772271848176648527, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
+      propertyPath: m_Size.x
+      value: 166.6
+      objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 345.7
@@ -5092,19 +5180,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7531618
+      value: 0.5155616
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.6578354
+      value: 0.85685253
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5112,7 +5200,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 82.27
+      value: 117.93
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -5155,6 +5243,10 @@ PrefabInstance:
       propertyPath: checkPointManager
       value: 
       objectReference: {fileID: 1806668609}
+    - target: {fileID: 6772271848176648527, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
+      propertyPath: m_Size.x
+      value: 148.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -132.6
@@ -5322,9 +5414,17 @@ PrefabInstance:
       propertyPath: checkPointManager
       value: 
       objectReference: {fileID: 1806668609}
+    - target: {fileID: 6772271848176648527, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
+      propertyPath: m_Size.x
+      value: 170.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 6772271848176648527, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
+      propertyPath: m_Center.x
+      value: -22.2
+      objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 352.9
+      value: 344.8
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5332,7 +5432,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 52.7
+      value: 48.5
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5501,6 +5601,10 @@ PrefabInstance:
       propertyPath: checkPointManager
       value: 
       objectReference: {fileID: 1806668609}
+    - target: {fileID: 6772271848176648527, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
+      propertyPath: m_Size.x
+      value: 106.3
+      objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -432.8
@@ -5515,7 +5619,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.9232103
+      value: -0.9702958
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalRotation.x
@@ -5523,7 +5627,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.3842952
+      value: -0.24192178
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalRotation.z
@@ -5535,7 +5639,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 405.2
+      value: 388
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -5645,6 +5749,10 @@ PrefabInstance:
       propertyPath: checkPointManager
       value: 
       objectReference: {fileID: 1806668609}
+    - target: {fileID: 6772271848176648527, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
+      propertyPath: m_Size.x
+      value: 146.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 78.2
@@ -5722,6 +5830,10 @@ PrefabInstance:
       propertyPath: checkPointManager
       value: 
       objectReference: {fileID: 1806668609}
+    - target: {fileID: 6772271848176648527, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
+      propertyPath: m_Size.x
+      value: 199
+      objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 152.4
@@ -5799,9 +5911,13 @@ PrefabInstance:
       propertyPath: checkPointManager
       value: 
       objectReference: {fileID: 1806668609}
+    - target: {fileID: 6772271848176648527, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
+      propertyPath: m_Size.x
+      value: 131.2
+      objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -412.1
+      value: -391.3
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5809,7 +5925,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -232.2
+      value: -234.5
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6010,6 +6126,10 @@ PrefabInstance:
       propertyPath: checkPointManager
       value: 
       objectReference: {fileID: 1806668609}
+    - target: {fileID: 6772271848176648527, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
+      propertyPath: m_Size.x
+      value: 156.9
+      objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -287.6
@@ -6628,6 +6748,10 @@ PrefabInstance:
       propertyPath: checkPointManager
       value: 
       objectReference: {fileID: 1806668609}
+    - target: {fileID: 6772271848176648527, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
+      propertyPath: m_Size.x
+      value: 228.9
+      objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -397.5
@@ -7109,6 +7233,10 @@ PrefabInstance:
       propertyPath: checkPointManager
       value: 
       objectReference: {fileID: 1806668609}
+    - target: {fileID: 6772271848176648527, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
+      propertyPath: m_Size.x
+      value: 163
+      objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 214.4
@@ -7188,7 +7316,7 @@ PrefabInstance:
       objectReference: {fileID: 1806668609}
     - target: {fileID: 6772271848176648527, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_Size.x
-      value: 79.3
+      value: 236.3
       objectReference: {fileID: 0}
     - target: {fileID: 6772271848176648527, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_Size.y
@@ -7204,7 +7332,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -203.9
+      value: -178.9
       objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7271,6 +7399,10 @@ PrefabInstance:
       propertyPath: checkPointManager
       value: 
       objectReference: {fileID: 1806668609}
+    - target: {fileID: 6772271848176648527, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
+      propertyPath: m_Size.x
+      value: 137.2
+      objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -29.6
@@ -7533,6 +7665,14 @@ PrefabInstance:
       propertyPath: checkPointManager
       value: 
       objectReference: {fileID: 1806668609}
+    - target: {fileID: 6772271848176648527, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
+      propertyPath: m_Size.x
+      value: 175.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 6772271848176648527, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
+      propertyPath: m_Size.y
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 23.520004
@@ -7695,6 +7835,10 @@ PrefabInstance:
       propertyPath: checkPointManager
       value: 
       objectReference: {fileID: 1806668609}
+    - target: {fileID: 6772271848176648527, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
+      propertyPath: m_Size.x
+      value: 204.4
+      objectReference: {fileID: 0}
     - target: {fileID: 7653578212851154087, guid: ce7da6c37096e19478b2062323f8bed1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -216.5
