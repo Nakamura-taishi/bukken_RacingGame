@@ -4,7 +4,7 @@ using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class t_NotstackCAR : MonoBehaviour
+public class t_NotstackNPC : MonoBehaviour
 {
     public GameObject CAR;
     public Vector3 NowCARPos;

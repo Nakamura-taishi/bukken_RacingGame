@@ -45,6 +45,8 @@ public class t_Rank : MonoBehaviour
         for(int i = 0;i < CheckPointManager.lastRanking.Count;i++) {
             if (CheckPointManager.lastRanking[i] == playercol) {
                 t_GoalJudgement.finished = true;
+                CheckPointManager.lastRanking.Remove(playercol);
+                CheckPointManager.lastRanking.Remove(npccol);
                 if (i == 0)
                 {
                     result.text = "Win!";

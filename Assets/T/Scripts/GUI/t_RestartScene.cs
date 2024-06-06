@@ -8,6 +8,7 @@ public class t_RestartScene : MonoBehaviour
 {
     void Start()
     {
+        t_GoalJudgement.finished = false;
         SceneManager.LoadScene("Racing", LoadSceneMode.Additive);
     }
 }
