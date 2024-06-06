@@ -116,7 +116,7 @@ public class t_Runner : MonoBehaviour
             NowEngine = MaxEngine;
         }
         //ドリフト走行
-        if (Input.GetKey(KeyCode.V) && falltimer == 0)
+        if (Input.GetKey(KeyCode.V) && falltimer == 0 && !(steering1 == 0))
         {
             foreach (AxleInfo axleinfo in axleInfos)
             {
@@ -132,6 +132,8 @@ public class t_Runner : MonoBehaviour
                 }
                 if (axleinfo.motor && axleinfo.drift == false)
                 {
+                    axleinfo.leftWheel.steerAngle = 0;
+                    axleinfo.rightWheel.steerAngle = 0;
                     axleinfo.leftWheel.motorTorque = 0;
                     axleinfo.rightWheel.motorTorque = 0;
                     axleinfo.steering = true;
@@ -146,7 +148,7 @@ public class t_Runner : MonoBehaviour
         {
             foreach (AxleInfo axleinfo in axleInfos)
             {
-                if (axleinfo.drift == true && axleinfo.motor && !(steering1 == 0))
+                if (axleinfo.drift == true && axleinfo.motor)
                 {
                     axleinfo.leftWheel.steerAngle = 0;
                     axleinfo.rightWheel.steerAngle = 0;
@@ -155,7 +157,6 @@ public class t_Runner : MonoBehaviour
                     axleinfo.steering = true;
                     axleinfo.motor = false;
                     axleinfo.drift = false;
-                    rg.angularDrag = 3;
                 }
                 if (axleinfo.drift == true && axleinfo.motor == false)
                 {
@@ -176,16 +177,14 @@ public class t_Runner : MonoBehaviour
         foreach (AxleInfo axleInfo in axleInfos)
         {
             //角度設定
-            if (axleInfo.steering && !Input.GetKey(KeyCode.C))
+            if (axleInfo.steering)
             {
                 if (motor > 0 || motor < 0 && falltimer == 0)
                 {
-                    rg.AddForce(transform.right * 200 * steering1);
+                    rg.AddForce(transform.right * 100 * steering1);
                 }
-
                 axleInfo.leftWheel.steerAngle = steering1;
                 axleInfo.rightWheel.steerAngle = steering1;
-                rg.angularDrag = 3;
             }
             ////弱ブレーキ
             //else if (axleInfo.steering && Input.GetKey(KeyCode.C))
@@ -201,6 +200,10 @@ public class t_Runner : MonoBehaviour
             //}
             if (axleInfo.steering && axleInfo.drift)
             {
+                if (motor > 0 || motor < 0 && falltimer == 0)
+                {
+                    rg.AddForce(transform.right * 200 * steering1);
+                }
                 axleInfo.leftWheel.steerAngle *= -2;
                 axleInfo.rightWheel.steerAngle *= -2;
             }
@@ -293,7 +296,7 @@ public class t_Runner : MonoBehaviour
 
             }
             //接地判定
-            Ray ray = new Ray(transform.position, -transform.up);
+            Ray ray = new Ray(transform.position, new Vector3(0,-1,0));
             Ray ray2 = new Ray(transform.position + transform.up, transform.up);
             bool isgroun = Physics.Raycast(ray, out RaycastHit hit,2.0f);
             bool iscrash = Physics.Raycast(ray2, out RaycastHit hit2,2.0f);
@@ -318,7 +321,8 @@ public class t_Runner : MonoBehaviour
                 }
 
             }
-            else if (isgroun == true) {
+            else if (isgroun == true)
+            {
                 falltimer = 0;
                 fall = false;
                 once1 = false;
@@ -327,15 +331,20 @@ public class t_Runner : MonoBehaviour
                 finalfalltimer2 += Time.deltaTime;
                 falltime = 0;
             }
-            //詰み防止用
-            if (isgroun == true && Input.GetKeyDown(KeyCode.Escape))
+            if (isgroun == true && hit.collider.gameObject.tag == "Fall")
             {
-                falltimer = 0;
-                transform.position = fallposition;
-                transform.localEulerAngles = new Vector3(0, transform.localEulerAngles.y, 0);
-                rg.velocity = Vector3.zero;
-                falltime = 0;
+                fall = true;
+                falltime = 7;
             }
+            //詰み防止用
+            //if (isgroun == true && Input.GetKeyDown(KeyCode.Escape))
+            //{
+            //    falltimer = 0;
+            //    transform.position = fallposition;
+            //    transform.localEulerAngles = new Vector3(0, transform.localEulerAngles.y, 0);
+            //    rg.velocity = Vector3.zero;
+            //    falltime = 0;
+            //}
             //クラッシュ時即時復帰
             //if (iscrash && !(hit2.collider.gameObject.tag == "Obstacle"))
             //{
@@ -350,7 +359,7 @@ public class t_Runner : MonoBehaviour
                 falltimer = 0;
                 if (falltime > 3)
                 {
-                    transform.position = fallposition - fallangle * 20;
+                    transform.position = new Vector3(fallposition.x - fallangle.x * 20,10, fallposition.z - fallangle.z * 20);
                     transform.localEulerAngles = new Vector3(0, transform.localEulerAngles.y, 0);
                     rg.velocity = Vector3.zero;
                     falltime = 0;
@@ -371,7 +380,7 @@ public class t_Runner : MonoBehaviour
             if (finalfall == true)
             {
                 finalfalltimer = 0;
-                transform.position = finalfallposition;
+                transform.position = new Vector3(finalfallposition.x - finalfallangle.x * 20, 10, finalfallposition.z - finalfallangle.z * 20);
                 transform.rotation = finalfallangle;
             }
             //地面の属性による影響

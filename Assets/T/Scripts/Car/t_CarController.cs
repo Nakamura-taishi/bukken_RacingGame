@@ -415,15 +415,6 @@ namespace UnityStandardAssets.Vehicles.Car
                 finalfalltimer2 += Time.deltaTime;
                 falltime = 0;
             }
-            //ãlÇ›ñhé~óp
-            if (isgroun == true && Input.GetKeyDown(KeyCode.Escape))
-            {
-                falltimer = 0;
-                transform.position = fallposition;
-                transform.localEulerAngles = new Vector3(0, transform.localEulerAngles.y, 0);
-                rg.velocity = Vector3.zero;
-                falltime = 0;
-            }
             //ÉNÉâÉbÉVÉÖéûë¶éûïúãA
             //if (iscrash && !(hit2.collider.gameObject.tag == "Obstacle"))
             //{
@@ -438,7 +429,7 @@ namespace UnityStandardAssets.Vehicles.Car
                 falltimer = 0;
                 if (falltime > 3)
                 {
-                    transform.position = fallposition - fallangle * 20;
+                    transform.position = new Vector3(fallposition.x - fallangle.x * 20, 10, fallposition.z - fallangle.z * 20);
                     transform.localEulerAngles = new Vector3(0, transform.localEulerAngles.y, 0);
                     rg.velocity = Vector3.zero;
                     falltime = 0;
@@ -459,7 +450,7 @@ namespace UnityStandardAssets.Vehicles.Car
             if (finalfall == true)
             {
                 finalfalltimer = 0;
-                transform.position = finalfallposition;
+                transform.position = new Vector3(finalfallposition.x - finalfallangle.x * 20, 10, finalfallposition.z - finalfallangle.z * 20);
                 transform.rotation = finalfallangle;
             }
             //ínñ ÇÃëÆê´Ç…ÇÊÇÈâeãø
