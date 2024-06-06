@@ -68,7 +68,11 @@ public class m_CheckPoint : MonoBehaviour
             }
             else
             {
-                ranking.Add(collision);
+                if (!checkPointManager.addedCollider.ContainsKey(collision))
+                {
+                    ranking.Add(collision);
+                    checkPointManager.addedCollider.Add(collision, true);
+                }
             }
         }
     }
