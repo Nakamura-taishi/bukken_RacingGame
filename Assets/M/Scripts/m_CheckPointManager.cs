@@ -8,6 +8,7 @@ public class m_CheckPointManager : MonoBehaviour
     public Dictionary<Collider, int> carLapCount = new();  // 車の周回数
     public int lastLap;
     public List<Collider> lastRanking = new();
+    public Dictionary<Collider, bool> addedCollider = new();
     
     public List<Collider> GetCurrentRanking()
     {
