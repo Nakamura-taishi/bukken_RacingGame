@@ -3241,6 +3241,14 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8997348870488060345, guid: 4ae6d75bd5f73f64e94a63ea675ce955, type: 3}
+      propertyPath: Wheels.Array.data[0].SD
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8997348870488060345, guid: 4ae6d75bd5f73f64e94a63ea675ce955, type: 3}
+      propertyPath: Wheels.Array.data[1].SD
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8997348870488060345, guid: 4ae6d75bd5f73f64e94a63ea675ce955, type: 3}
       propertyPath: Wheels.Array.data[2].SD
       value: 0.5
       objectReference: {fileID: 0}
@@ -3265,8 +3273,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1581569787}
     - target: {fileID: 8997348870488060345, guid: 4ae6d75bd5f73f64e94a63ea675ce955, type: 3}
+      propertyPath: Wheels.Array.data[0].Radius
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8997348870488060345, guid: 4ae6d75bd5f73f64e94a63ea675ce955, type: 3}
+      propertyPath: Wheels.Array.data[1].Radius
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8997348870488060345, guid: 4ae6d75bd5f73f64e94a63ea675ce955, type: 3}
       propertyPath: Wheels.Array.data[2].Radius
       value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8997348870488060345, guid: 4ae6d75bd5f73f64e94a63ea675ce955, type: 3}
+      propertyPath: Wheels.Array.data[0].Center.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8997348870488060345, guid: 4ae6d75bd5f73f64e94a63ea675ce955, type: 3}
+      propertyPath: Wheels.Array.data[1].Center.y
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 8997348870488060345, guid: 4ae6d75bd5f73f64e94a63ea675ce955, type: 3}
       propertyPath: Wheels.Array.data[2].Center.y
@@ -8436,6 +8460,30 @@ PrefabInstance:
     - target: {fileID: 5171266764704222219, guid: 568bec60c3f85e94bbbdd295e816f531, type: 3}
       propertyPath: m_FullTorqueOverAllWheels
       value: 10000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488527362454484992, guid: 568bec60c3f85e94bbbdd295e816f531, type: 3}
+      propertyPath: Wheels.Array.data[0].SD
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488527362454484992, guid: 568bec60c3f85e94bbbdd295e816f531, type: 3}
+      propertyPath: Wheels.Array.data[1].SD
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488527362454484992, guid: 568bec60c3f85e94bbbdd295e816f531, type: 3}
+      propertyPath: Wheels.Array.data[0].Radius
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488527362454484992, guid: 568bec60c3f85e94bbbdd295e816f531, type: 3}
+      propertyPath: Wheels.Array.data[1].Radius
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488527362454484992, guid: 568bec60c3f85e94bbbdd295e816f531, type: 3}
+      propertyPath: Wheels.Array.data[0].Center.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488527362454484992, guid: 568bec60c3f85e94bbbdd295e816f531, type: 3}
+      propertyPath: Wheels.Array.data[1].Center.y
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 5488527363826023300, guid: 568bec60c3f85e94bbbdd295e816f531, type: 3}
       propertyPath: m_RootOrder
