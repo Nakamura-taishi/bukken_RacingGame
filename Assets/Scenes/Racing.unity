@@ -3249,14 +3249,6 @@ PrefabInstance:
       value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 8997348870488060345, guid: 4ae6d75bd5f73f64e94a63ea675ce955, type: 3}
-      propertyPath: Wheels.Array.data[0].FAPD
-      value: 0.44
-      objectReference: {fileID: 0}
-    - target: {fileID: 8997348870488060345, guid: 4ae6d75bd5f73f64e94a63ea675ce955, type: 3}
-      propertyPath: Wheels.Array.data[1].FAPD
-      value: 0.44
-      objectReference: {fileID: 0}
-    - target: {fileID: 8997348870488060345, guid: 4ae6d75bd5f73f64e94a63ea675ce955, type: 3}
       propertyPath: Wheels.Array.data[2].FAPD
       value: 0.44
       objectReference: {fileID: 0}
@@ -3285,34 +3277,6 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8997348870488060345, guid: 4ae6d75bd5f73f64e94a63ea675ce955, type: 3}
-      propertyPath: Wheels.Array.data[0].Frif.ExSlip
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8997348870488060345, guid: 4ae6d75bd5f73f64e94a63ea675ce955, type: 3}
-      propertyPath: Wheels.Array.data[0].Sidf.AsSlip
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8997348870488060345, guid: 4ae6d75bd5f73f64e94a63ea675ce955, type: 3}
-      propertyPath: Wheels.Array.data[0].Sidf.ExSlip
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8997348870488060345, guid: 4ae6d75bd5f73f64e94a63ea675ce955, type: 3}
-      propertyPath: Wheels.Array.data[1].Frif.AsSlip
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8997348870488060345, guid: 4ae6d75bd5f73f64e94a63ea675ce955, type: 3}
-      propertyPath: Wheels.Array.data[1].Frif.ExSlip
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8997348870488060345, guid: 4ae6d75bd5f73f64e94a63ea675ce955, type: 3}
-      propertyPath: Wheels.Array.data[1].Sidf.AsSlip
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8997348870488060345, guid: 4ae6d75bd5f73f64e94a63ea675ce955, type: 3}
-      propertyPath: Wheels.Array.data[1].Sidf.ExSlip
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8997348870488060345, guid: 4ae6d75bd5f73f64e94a63ea675ce955, type: 3}
       propertyPath: Wheels.Array.data[2].Frif.AsSlip
       value: 0.8
       objectReference: {fileID: 0}
@@ -3335,38 +3299,6 @@ PrefabInstance:
     - target: {fileID: 8997348870488060345, guid: 4ae6d75bd5f73f64e94a63ea675ce955, type: 3}
       propertyPath: Wheels.Array.data[2].Sups.Spring
       value: 35000
-      objectReference: {fileID: 0}
-    - target: {fileID: 8997348870488060345, guid: 4ae6d75bd5f73f64e94a63ea675ce955, type: 3}
-      propertyPath: Wheels.Array.data[0].Frif.AsValue
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8997348870488060345, guid: 4ae6d75bd5f73f64e94a63ea675ce955, type: 3}
-      propertyPath: Wheels.Array.data[0].Frif.ExValue
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8997348870488060345, guid: 4ae6d75bd5f73f64e94a63ea675ce955, type: 3}
-      propertyPath: Wheels.Array.data[0].Sidf.AsValue
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8997348870488060345, guid: 4ae6d75bd5f73f64e94a63ea675ce955, type: 3}
-      propertyPath: Wheels.Array.data[0].Sidf.ExValue
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8997348870488060345, guid: 4ae6d75bd5f73f64e94a63ea675ce955, type: 3}
-      propertyPath: Wheels.Array.data[1].Frif.AsValue
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8997348870488060345, guid: 4ae6d75bd5f73f64e94a63ea675ce955, type: 3}
-      propertyPath: Wheels.Array.data[1].Frif.ExValue
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8997348870488060345, guid: 4ae6d75bd5f73f64e94a63ea675ce955, type: 3}
-      propertyPath: Wheels.Array.data[1].Sidf.AsValue
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8997348870488060345, guid: 4ae6d75bd5f73f64e94a63ea675ce955, type: 3}
-      propertyPath: Wheels.Array.data[1].Sidf.ExValue
-      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 8997348870488060345, guid: 4ae6d75bd5f73f64e94a63ea675ce955, type: 3}
       propertyPath: Wheels.Array.data[2].Frif.AsValue
@@ -3409,12 +3341,24 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8997348871373058562, guid: 4ae6d75bd5f73f64e94a63ea675ce955, type: 3}
+      propertyPath: cap
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8997348871373058562, guid: 4ae6d75bd5f73f64e94a63ea675ce955, type: 3}
       propertyPath: breaking
       value: 1000000
       objectReference: {fileID: 0}
     - target: {fileID: 8997348871373058562, guid: 4ae6d75bd5f73f64e94a63ea675ce955, type: 3}
+      propertyPath: MaxEngine
+      value: 3000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8997348871373058562, guid: 4ae6d75bd5f73f64e94a63ea675ce955, type: 3}
+      propertyPath: boostspeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8997348871373058562, guid: 4ae6d75bd5f73f64e94a63ea675ce955, type: 3}
       propertyPath: maxMotorTorque
-      value: 2000
+      value: 10000
       objectReference: {fileID: 0}
     - target: {fileID: 8997348871373058563, guid: 4ae6d75bd5f73f64e94a63ea675ce955, type: 3}
       propertyPath: m_Name

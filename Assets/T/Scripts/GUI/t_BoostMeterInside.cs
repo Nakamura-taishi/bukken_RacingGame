@@ -19,7 +19,7 @@ public class t_BoostMeterInside : MonoBehaviour
         {
             t_Runner car = GameObject.Find("t_playerCAR").GetComponent<t_Runner>();
             boost = car.NowEngine;
-            this.transform.localScale = new Vector3(1, (boost / 1000), 0);
+            this.transform.localScale = new Vector3(1, (boost / 3000), 0);
         }
     }
 }

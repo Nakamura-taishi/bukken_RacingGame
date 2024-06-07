@@ -182,6 +182,10 @@ public class t_Runner : MonoBehaviour
                 if (motor > 0 || motor < 0 && falltimer == 0)
                 {
                     rg.AddForce(transform.right * 100 * steering1);
+                    if (!(steering1 == 0) && rg.velocity.magnitude <= 60)
+                    {
+                        rg.AddForce(transform.forward * -1 * (15000 - rg.velocity.magnitude * 250));
+                    }
                 }
                 axleInfo.leftWheel.steerAngle = steering1;
                 axleInfo.rightWheel.steerAngle = steering1;
@@ -214,7 +218,7 @@ public class t_Runner : MonoBehaviour
 
                 if (Input.GetKey(KeyCode.Space))
                 {
-                    if ((NowEngine >= 1 || infinitygasoline) && falltimer == 0)
+                    if ((NowEngine >= 1 || infinitygasoline) && falltimer == 0 && !(motor1 == 0))
                     {
                         cap = 9999;
                         rg.AddForce(transform.forward * 2000 * boostspeed);
@@ -225,12 +229,12 @@ public class t_Runner : MonoBehaviour
 
                     }
 
-                    else { cap = 60; }
+                    else { cap = 90; }
                 }
                 else
                 {
 
-                    cap = 60;
+                    cap = 90;
                 }
                 
 
@@ -245,9 +249,9 @@ public class t_Runner : MonoBehaviour
                     motor1 = motor;
                     if (motor1 > 0)
                     {
-                        if (rg.velocity.magnitude <= 40 && falltimer == 0)
+                        if (rg.velocity.magnitude <= 60 && falltimer == 0)
                         {
-                            rg.AddForce(transform.forward * (10000 - rg.velocity.magnitude * 250));
+                            rg.AddForce(transform.forward * (15000 - rg.velocity.magnitude * 250));
 
                         }
 

@@ -12,7 +12,7 @@ public class t_NowRap : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(CheckPointManager.carLapCount[Playercol] + 1 < CheckPointManager.lastLap)
+        if(CheckPointManager.carLapCount[Playercol] < CheckPointManager.lastLap)
         Raptext.text = (CheckPointManager.carLapCount[Playercol]+1).ToString();
     }
 }
