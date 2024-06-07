@@ -63,8 +63,7 @@ public class m_CheckPoint : MonoBehaviour
             }
             else if (ranking.IndexOf(collision) >= 0)
             {
-                ranking.Remove(collision);
-                checkPointBefore.ranking.Add(collision);
+                // 何もしない
             }
             else
             {
