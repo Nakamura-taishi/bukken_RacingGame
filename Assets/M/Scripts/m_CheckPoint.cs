@@ -59,7 +59,7 @@ public class m_CheckPoint : MonoBehaviour
             else if (checkPointAfter.ranking.IndexOf(collision) >= 0)
             {
                 checkPointAfter.ranking.Remove(collision);
-                checkPointBefore.ranking.Add(collision);
+                ranking.Add(collision);
             }
             else if (ranking.IndexOf(collision) >= 0)
             {
@@ -71,6 +71,8 @@ public class m_CheckPoint : MonoBehaviour
                 {
                     ranking.Add(collision);
                     checkPointManager.addedCollider.Add(collision, true);
+                    if (!checkPointManager.carLapCount.ContainsKey(collision)) checkPointManager.carLapCount.Add(collision, 0);
+                    if (pointIndex != 0) checkPointManager.carLapCount[collision]--;
                 }
             }
         }
