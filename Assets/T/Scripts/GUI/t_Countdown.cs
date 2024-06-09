@@ -8,6 +8,8 @@ public class t_Countdown : MonoBehaviour
     public GameObject Text2;
     public GameObject Text1;
     public GameObject TextStart;
+    public AudioClip startaudio;
+    public GameObject BGM;
     static public bool playing = false;
     async void Start()
     {
@@ -28,6 +30,8 @@ public class t_Countdown : MonoBehaviour
     {
         await Task.Delay(1000);
         Text3.SetActive(true);
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.PlayOneShot(startaudio);
     }
     async Task text2()
     {
@@ -48,6 +52,7 @@ public class t_Countdown : MonoBehaviour
         TextStart.SetActive(true);
         Time.timeScale = 1f;
         playing = true;
+        BGM.SetActive(true);
     }
     async Task finishtext()
     {
