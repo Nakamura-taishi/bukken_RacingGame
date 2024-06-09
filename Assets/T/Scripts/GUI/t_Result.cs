@@ -13,6 +13,7 @@ public class t_Result : MonoBehaviour
     public TextMeshProUGUI GoalTime_Text;
     public Image image;
     public GameObject BGM;
+    public GameObject PlayerCAR;
     public bool once = false;
     string gasUrl = "https://script.google.com/macros/s/AKfycbyKSjQbq5R-QiswheEITRciPkoXo_BvltFbOLTClLqtXZsEITYaS4aq9tK-8xISBWW-/exec";
     // Start is called before the first frame update
@@ -59,18 +60,12 @@ public class t_Result : MonoBehaviour
         WWWForm form = new WWWForm();
 
         //それぞれのInputFieldから情報を取得
-        string nameText = "Player";
+        string nameText = t_InputPlayer.Name;
         string commentText = t_TimeCounter.GoalTime;
-
-        //値が空の場合は処理を中断
-        if (string.IsNullOrEmpty(nameText) || string.IsNullOrEmpty(commentText))
-        {
-            Debug.Log("empty!");
-            yield break;
-        }
+        string Engine = PlayerCAR.GetComponent<t_Runner>().NowEngine.ToString();
 
         //それぞれの値をカンマ区切りでcombinedText変数に代入
-        string combinedText = string.Join(",", nameText, commentText);
+        string combinedText = string.Join(",", nameText, commentText,Engine);
 
         //formにPostする情報をvalというキー、値はcombinedTextで追加する
         form.AddField("val", combinedText);

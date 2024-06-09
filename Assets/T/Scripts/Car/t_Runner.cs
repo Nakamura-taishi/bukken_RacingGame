@@ -65,7 +65,6 @@ public class t_Runner : MonoBehaviour
     //速度上限
     public int cap = 60;
     //ガソリン無限モード
-    public bool infinitygasoline = false;
     public void Start()
     {
         NowEngine = MaxEngine;
@@ -83,10 +82,6 @@ public class t_Runner : MonoBehaviour
     }
     public void Update()
     {
-        if (Input.GetKey(KeyCode.F))
-        {
-            infinitygasoline = true;
-        }
         Rigidbody rg = this.GetComponent<Rigidbody>(); 
         float steering = SteeringAngle * Input.GetAxis("Horizontal");
         //角度調整
@@ -218,14 +213,11 @@ public class t_Runner : MonoBehaviour
 
                 if (Input.GetKey(KeyCode.Space))
                 {
-                    if ((NowEngine >= 1 || infinitygasoline) && falltimer == 0 && !(motor1 == 0))
+                    if ((NowEngine >= 1) && falltimer == 0 && !(motor1 == 0))
                     {
                         cap = 9999;
                         rg.AddForce(transform.forward * 2000 * boostspeed);
-                        if (!infinitygasoline)
-                        {
                             NowEngine -= 1;
-                        }
 
                     }
 

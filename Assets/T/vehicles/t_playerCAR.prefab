@@ -718,7 +718,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8997348870735242857}
   - component: {fileID: 8997348870735242862}
-  - component: {fileID: 8997348870735242863}
   - component: {fileID: 3166992836877968308}
   m_Layer: 0
   m_Name: Main Camera
@@ -793,14 +792,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &8997348870735242863
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8997348870735242860}
-  m_Enabled: 1
 --- !u!114 &3166992836877968308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1219,7 +1210,6 @@ MonoBehaviour:
   finalfallposition: {x: 0, y: 0, z: 0}
   finalfallangle: {x: 0, y: 0, z: 0, w: 0}
   cap: 60
-  infinitygasoline: 0
 --- !u!54 &8997348871373058620
 Rigidbody:
   m_ObjectHideFlags: 0
