@@ -64,8 +64,6 @@ public class t_Runner : MonoBehaviour
     bool once1 = false;
     //���x���
     public int cap = 60;
-    //�K�\�����������[�h
-    public bool infinitygasoline = false;
     public void Start()
     {
         NowEngine = MaxEngine;
@@ -83,10 +81,6 @@ public class t_Runner : MonoBehaviour
     }
     public void Update()
     {
-        if (Input.GetKey(KeyCode.F))
-        {
-            infinitygasoline = true;
-        }
         Rigidbody rg = this.GetComponent<Rigidbody>();
         float steering = SteeringAngle * Input.GetAxis("Horizontal");
         //�p�x����
@@ -219,14 +213,11 @@ public class t_Runner : MonoBehaviour
 
                 if (Input.GetKey(KeyCode.Space) || Input.GetAxis("ZR") != 0)
                 {
-                    if ((NowEngine >= 1 || infinitygasoline) && falltimer == 0 && !(motor1 == 0))
+                    if ((NowEngine >= 1) && falltimer == 0 && !(motor1 == 0))
                     {
                         cap = 9999;
                         rg.AddForce(transform.forward * 2000 * boostspeed);
-                        if (!infinitygasoline)
-                        {
                             NowEngine -= 1;
-                        }
 
                     }
 

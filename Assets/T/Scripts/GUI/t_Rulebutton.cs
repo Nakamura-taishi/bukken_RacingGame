@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class t_StartButton : MonoBehaviour
+public class t_Rulebutton : MonoBehaviour
 {
-    public void OnClick()
+    public void Onclick() 
     {
-        SceneManager.LoadSceneAsync("InputPlayer");
+        SceneManager.LoadScene("RULE3");
     }
 }
