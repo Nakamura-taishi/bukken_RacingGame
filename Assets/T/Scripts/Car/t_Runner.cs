@@ -6,20 +6,20 @@ using System.Threading;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 /// <summary>
-/// Ô‚Ìd—l
-/// Šî–{‘€ì: W orª/S or« ‘Oi/Œã‘Ş,A or©/D or¨ ƒ^ƒCƒ„‚ğ¶/‰E‚É‹È‚°‚é,C ƒuƒŒ[ƒL
-/// Space ƒKƒ\ƒŠƒ“‚ğg—p‚µ‚Ä‰Á‘¬(–³‚¢ê‡‚Í–³Œø),Escape Ô‚ğ‚»‚Ìê‚Å•œ‹A‚³‚¹‚é(‹l‚İ–h~—pA—‰º’†–³Œø)
-/// VƒhƒŠƒtƒg
-/// —‰ºƒ^ƒCƒ}[‚É‚Â‚¢‚Ä‚Ífalltimer‚ª—‰º‚µ‚Ä‚¢‚éŠÔ
-/// finalfalltimer‚É‚Â‚¢‚Ä‚Í‹l‚İ–h~‚Ìˆ×‚ÉÀ‘•‚µ‚½‚à‚Ì‚Å‚·(falltimer‚Å•œ‹Ao—ˆ‚È‚©‚Á‚½‚Æ‚«‚ÉÀs)B
-/// Šî–{‚·‚×‚Äfalllimit‚ªŠÇ—‚µ‚Ä‚¢‚é‚Ì‚Åfalllimit‚ğ•ÏX‚µ‚Ä‚­‚¾‚³‚¢B
-/// Ô‚É‰Á‘¬‚ğ‚Â‚¯‚éˆ×‚É’Êí‚Ìwheelcollider‚Ì‘€ì‚Ì‘¼‚ÉÔ©g‚É‚à—Í‚ğ‰Á‚¦‚Ä‚Ü‚·B
-/// ƒhƒŠƒtƒg‚Ì‚İƒXƒeƒAƒŠƒ“ƒO‚Æƒ‚[ƒ^[‚Ì–ğŠ„‚ªŒã—Ö‚ÉˆÚs‚µ‚Ä‚Ü‚·B
-/// angularDrag(Ô‚Ì‹È‚ª‚è‚É‚­‚³)‚É‚Â‚¢‚Ä‚ÍƒhƒŠƒtƒg‚Ü‚½‚Í•X‚Ì‚PC’Êí‚R‚Å’²®‚µ‚Ä‚Ü‚·B(•Ï‚¦‚Ä‚à‚¢‚¢)
-/// Drag‚Í‚»‚à‚»‚à‚Ìi‚İ‚â‚·‚³‚ğ•\‚µ‚Ä‚¢‚Ü‚·B
-/// ‚»‚Ì‘¼‚É‚Â‚¢‚Ä‚Í‚Ù‚©‚ÌƒRƒƒ“ƒgƒAƒEƒg‚ğŒ©‚Ä‚­‚¾‚³‚¢B
-/// Šî–{“I‚É‘€ì‚µ‚Ä‚¢‚Ä•s‰õ‚ª‚È‚¢‚æ‚¤‚Éì‚é‚Ì‚ª–Ú•W‚Å‚·B
-/// ‚Å‚«‚ê‚Î‰‰o‚àì‚è‚½‚¢‚Æl‚¦‚Ä‚¢‚Ü‚·B
+/// ï¿½Ô‚Ìdï¿½l
+/// ï¿½ï¿½{ï¿½ï¿½ï¿½ï¿½: W orï¿½ï¿½/S orï¿½ï¿½ ï¿½Oï¿½i/ï¿½ï¿½ï¿½,A orï¿½ï¿½/D orï¿½ï¿½ ï¿½^ï¿½Cï¿½ï¿½ï¿½ï¿½ï¿½ï¿½/ï¿½Eï¿½É‹È‚ï¿½ï¿½ï¿½,C ï¿½uï¿½ï¿½ï¿½[ï¿½L
+/// Space ï¿½Kï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½gï¿½pï¿½ï¿½ï¿½Ä‰ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½ê‡ï¿½Í–ï¿½ï¿½ï¿½),Escape ï¿½Ô‚ï¿½ï¿½ï¿½ï¿½Ìï¿½Å•ï¿½ï¿½Aï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½lï¿½İ–hï¿½~ï¿½pï¿½Aï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)
+/// Vï¿½hï¿½ï¿½ï¿½tï¿½g
+/// ï¿½ï¿½ï¿½ï¿½ï¿½^ï¿½Cï¿½}ï¿½[ï¿½É‚Â‚ï¿½ï¿½Ä‚ï¿½falltimerï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½éï¿½ï¿½
+/// finalfalltimerï¿½É‚Â‚ï¿½ï¿½Ä‚Í‹lï¿½İ–hï¿½~ï¿½Ìˆ×‚Éï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì‚Å‚ï¿½(falltimerï¿½Å•ï¿½ï¿½Aï¿½oï¿½ï¿½ï¿½È‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ‚ï¿½ï¿½Éï¿½ï¿½s)ï¿½B
+/// ï¿½ï¿½{ï¿½ï¿½ï¿½×‚ï¿½falllimitï¿½ï¿½ï¿½Ç—ï¿½ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½Ì‚ï¿½falllimitï¿½ï¿½ÏXï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½B
+/// ï¿½Ô‚É‰ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â‚ï¿½ï¿½ï¿½×‚É’Êï¿½ï¿½wheelcolliderï¿½Ì‘ï¿½ï¿½ï¿½Ì‘ï¿½ï¿½ÉÔï¿½ï¿½gï¿½É‚ï¿½ï¿½Í‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä‚Ü‚ï¿½ï¿½B
+/// ï¿½hï¿½ï¿½ï¿½tï¿½gï¿½ï¿½ï¿½Ì‚İƒXï¿½eï¿½Aï¿½ï¿½ï¿½ï¿½ï¿½Oï¿½Æƒï¿½ï¿½[ï¿½^ï¿½[ï¿½Ì–ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö‚ÉˆÚsï¿½ï¿½ï¿½Ä‚Ü‚ï¿½ï¿½B
+/// angularDrag(ï¿½Ô‚Ì‹È‚ï¿½ï¿½ï¿½É‚ï¿½ï¿½ï¿½)ï¿½É‚Â‚ï¿½ï¿½Ä‚Íƒhï¿½ï¿½ï¿½tï¿½gï¿½ï¿½ï¿½Ü‚ï¿½ï¿½Í•Xï¿½Ìï¿½ï¿½Pï¿½Cï¿½Êï¿½Rï¿½Å’ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä‚Ü‚ï¿½ï¿½B(ï¿½Ï‚ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½)
+/// Dragï¿½Í‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ìiï¿½İ‚â‚·ï¿½ï¿½ï¿½ï¿½\ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½Ü‚ï¿½ï¿½B
+/// ï¿½ï¿½ï¿½Ì‘ï¿½ï¿½É‚Â‚ï¿½ï¿½Ä‚Í‚Ù‚ï¿½ï¿½ÌƒRï¿½ï¿½ï¿½ï¿½ï¿½gï¿½Aï¿½Eï¿½gï¿½ï¿½ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½B
+/// ï¿½ï¿½{ï¿½Iï¿½É‘ï¿½ï¿½ì‚µï¿½Ä‚ï¿½ï¿½Ä•sï¿½ï¿½ï¿½ï¿½ï¿½È‚ï¿½ï¿½æ‚¤ï¿½Éï¿½ï¿½Ì‚ï¿½ï¿½Ú•Wï¿½Å‚ï¿½ï¿½B
+/// ï¿½Å‚ï¿½ï¿½ï¿½Î‰ï¿½ï¿½oï¿½ï¿½ï¿½ï¿½è‚½ï¿½ï¿½ï¿½Ælï¿½ï¿½ï¿½Ä‚ï¿½ï¿½Ü‚ï¿½ï¿½B
 /// </summary>
 
 public class t_Runner : MonoBehaviour
@@ -27,44 +27,43 @@ public class t_Runner : MonoBehaviour
     public List<AxleInfo> axleInfos;
     public GameObject wheels;
     public GameObject cartrail;
-    //Å‘å‚Ì‘¬“x(Šî–{)
+    //ï¿½Å‘ï¿½Ì‘ï¿½ï¿½x(ï¿½ï¿½{)
     public float maxMotorTorque;
-    //ƒ^ƒCƒ„‚ğ‹È‚°‚ê‚éŠp“x
+    //ï¿½^ï¿½Cï¿½ï¿½ï¿½ï¿½ï¿½È‚ï¿½ï¿½ï¿½ï¿½pï¿½x
     public float SteeringAngle;
-    //‰Á‘¬”{—¦
+    //ï¿½ï¿½ï¿½ï¿½ï¿½{ï¿½ï¿½
     public float boostspeed;
-    //ƒuƒŒ[ƒL‚Ì”n—Í
+    //ï¿½uï¿½ï¿½ï¿½[ï¿½Lï¿½Ì”nï¿½ï¿½
     public float breaking;
-    //‰¼‚Ì’l(QÆ—p)
-    public float steering1 = 0 ;
+    //ï¿½ï¿½ï¿½Ì’l(ï¿½Qï¿½Æ—p)
+    public float steering1 = 0;
     public float motor1 = 0;
-    //‰Á‘¬‘O‚Ì‘¬“x
+    //ï¿½ï¿½ï¿½ï¿½ï¿½Oï¿½Ì‘ï¿½ï¿½x
     public Vector3 prospeed;
-    //‰Á‘¬‚Ì§ŒÀ—p(ƒKƒ\ƒŠƒ“)
+    //ï¿½ï¿½ï¿½ï¿½ï¿½Ìï¿½ï¿½ï¿½ï¿½p(ï¿½Kï¿½\ï¿½ï¿½ï¿½ï¿½)
     public float MaxEngine;
     public float NowEngine;
-    //Œ¸‘¬ˆ—
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     public float friction;
-    //—‰º§ŒÀŠÔ
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     public float falllimit;
-    //—‰ºƒ^ƒCƒ}[
+    //ï¿½ï¿½ï¿½ï¿½ï¿½^ï¿½Cï¿½}ï¿½[
     public float falltimer;
     public float falltime;
     public float finalfalltimer;
     public float finalfalltimer2;
-    //—‰º”»’è
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     public bool fall;
     public bool finalfall;
-    //•œŠˆˆÊ’u
+    //ï¿½ï¿½ï¿½ï¿½ï¿½Ê’u
     public Vector3 fallposition;
     public Vector3 fallangle;
     public Vector3 finalfallposition;
     public Quaternion finalfallangle;
-    //ˆê‰ñ§ŒÀ
+    //ï¿½ï¿½ñ§Œï¿½
     bool once1 = false;
-    //‘¬“xãŒÀ
+    //ï¿½ï¿½ï¿½xï¿½ï¿½ï¿½
     public int cap = 60;
-    //ƒKƒ\ƒŠƒ“–³ŒÀƒ‚[ƒh
     public void Start()
     {
         NowEngine = MaxEngine;
@@ -78,40 +77,41 @@ public class t_Runner : MonoBehaviour
         {
             cartrail = wheels.transform.Find("particles").gameObject;
         }
-        
+
     }
     public void Update()
     {
-        Rigidbody rg = this.GetComponent<Rigidbody>(); 
+        Rigidbody rg = this.GetComponent<Rigidbody>();
         float steering = SteeringAngle * Input.GetAxis("Horizontal");
-        //Šp“x’²®
+        //ï¿½pï¿½xï¿½ï¿½ï¿½ï¿½
         if (Input.GetAxis("Horizontal") > 0)
         {
-                steering1 = steering;
+            steering1 = steering;
 
-                
+
         }
         else if (Input.GetAxis("Horizontal") < 0)
         {
-                steering1 = steering;
+            steering1 = steering;
 
 
-        }else
+        }
+        else
         {
-                steering1 = 0;
+            steering1 = 0;
         }
     }
     public void FixedUpdate()
     {
         Rigidbody rg = this.GetComponent<Rigidbody>();
         float motor = maxMotorTorque * Input.GetAxis("Vertical");
-        //’´‰ß–h~
+        //ï¿½ï¿½ï¿½ß–hï¿½~
         if (NowEngine > MaxEngine)
         {
             NowEngine = MaxEngine;
         }
-        //ƒhƒŠƒtƒg‘–s
-        if (Input.GetKey(KeyCode.V) && falltimer == 0 && !(steering1 == 0))
+        //ï¿½hï¿½ï¿½ï¿½tï¿½gï¿½ï¿½ï¿½s
+        if ((Input.GetKey(KeyCode.V) || Input.GetAxis("ZL") != 0) && falltimer == 0 && !(steering1 == 0))
         {
             foreach (AxleInfo axleinfo in axleInfos)
             {
@@ -134,7 +134,7 @@ public class t_Runner : MonoBehaviour
                     axleinfo.steering = true;
                     axleinfo.motor = false;
                     axleinfo.drift = true;
-                    
+
                 }
             }
             cartrail.SetActive(true);
@@ -171,7 +171,7 @@ public class t_Runner : MonoBehaviour
 
         foreach (AxleInfo axleInfo in axleInfos)
         {
-            //Šp“xİ’è
+            //ï¿½pï¿½xï¿½İ’ï¿½
             if (axleInfo.steering)
             {
                 if (motor > 0 || motor < 0 && falltimer == 0)
@@ -185,7 +185,7 @@ public class t_Runner : MonoBehaviour
                 axleInfo.leftWheel.steerAngle = steering1;
                 axleInfo.rightWheel.steerAngle = steering1;
             }
-            ////ãƒuƒŒ[ƒL
+            ////ï¿½ï¿½uï¿½ï¿½ï¿½[ï¿½L
             //else if (axleInfo.steering && Input.GetKey(KeyCode.C))
             //{
             //    if (motor > 0 || motor < 0 && falltimer == 0)
@@ -206,12 +206,12 @@ public class t_Runner : MonoBehaviour
                 axleInfo.leftWheel.steerAngle *= -2;
                 axleInfo.rightWheel.steerAngle *= -2;
             }
-            //‘OiorŒã‘Ş
+            //ï¿½Oï¿½iorï¿½ï¿½ï¿½
             if (axleInfo.motor)
             {
-                //ƒKƒ\ƒŠƒ“‚ğg—p‚µ‚Ä‰Á‘¬(0‚É‚È‚é‚Æ‰Á‘¬•s‰Â)
+                //ï¿½Kï¿½\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½gï¿½pï¿½ï¿½ï¿½Ä‰ï¿½ï¿½ï¿½(0ï¿½É‚È‚ï¿½Æ‰ï¿½ï¿½ï¿½ï¿½sï¿½ï¿½)
 
-                if (Input.GetKey(KeyCode.Space))
+                if (Input.GetKey(KeyCode.Space) || Input.GetAxis("ZR") != 0)
                 {
                     if ((NowEngine >= 1) && falltimer == 0 && !(motor1 == 0))
                     {
@@ -228,7 +228,7 @@ public class t_Runner : MonoBehaviour
 
                     cap = 90;
                 }
-                
+
 
 
                 if (rg.velocity.magnitude >= cap)
@@ -271,14 +271,14 @@ public class t_Runner : MonoBehaviour
             {
                 SceneManager.LoadScene("Title");
             }
-            //ƒuƒŒ[ƒL
+            //ï¿½uï¿½ï¿½ï¿½[ï¿½L
             if (Input.GetKey(KeyCode.C))
             {
                 axleInfo.leftWheel.brakeTorque = breaking;
                 axleInfo.rightWheel.brakeTorque = breaking;
             }
 
-            //ãƒuƒŒ[ƒL(ƒJ[ƒu‹­‰»)
+            //ï¿½ï¿½uï¿½ï¿½ï¿½[ï¿½L(ï¿½Jï¿½[ï¿½uï¿½ï¿½ï¿½ï¿½)
             //else if (Input.GetKey(KeyCode.C))
             //{
             //    axleInfo.leftWheel.brakeTorque = maxMotorTorque / 5;
@@ -291,11 +291,11 @@ public class t_Runner : MonoBehaviour
                 axleInfo.rightWheel.brakeTorque = 0;
 
             }
-            //Ú’n”»’è
-            Ray ray = new Ray(transform.position, new Vector3(0,-1,0));
+            //ï¿½Ú’nï¿½ï¿½ï¿½ï¿½
+            Ray ray = new Ray(transform.position, new Vector3(0, -1, 0));
             Ray ray2 = new Ray(transform.position + transform.up, transform.up);
-            bool isgroun = Physics.Raycast(ray, out RaycastHit hit,2.0f);
-            bool iscrash = Physics.Raycast(ray2, out RaycastHit hit2,2.0f);
+            bool isgroun = Physics.Raycast(ray, out RaycastHit hit, 2.0f);
+            bool iscrash = Physics.Raycast(ray2, out RaycastHit hit2, 2.0f);
             Debug.DrawRay(ray.origin, ray.direction, Color.red, 1);
 
             if (isgroun == false || hit.collider.gameObject.tag == "Obstacle")
@@ -332,7 +332,7 @@ public class t_Runner : MonoBehaviour
                 fall = true;
                 falltime = 7;
             }
-            //‹l‚İ–h~—p
+            //ï¿½lï¿½İ–hï¿½~ï¿½p
             //if (isgroun == true && Input.GetKeyDown(KeyCode.Escape))
             //{
             //    falltimer = 0;
@@ -341,7 +341,7 @@ public class t_Runner : MonoBehaviour
             //    rg.velocity = Vector3.zero;
             //    falltime = 0;
             //}
-            //ƒNƒ‰ƒbƒVƒ…‘¦•œ‹A
+            //ï¿½Nï¿½ï¿½ï¿½bï¿½Vï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½A
             //if (iscrash && !(hit2.collider.gameObject.tag == "Obstacle"))
             //{
             //    falltimer = 0;
@@ -350,19 +350,19 @@ public class t_Runner : MonoBehaviour
             //    rg.velocity = Vector3.zero;
             //    falltime = 0;
             //}
-            if (fall == true) 
+            if (fall == true)
             {
                 falltimer = 0;
                 if (falltime > 3)
                 {
-                    transform.position = new Vector3(fallposition.x - fallangle.x * 20,10, fallposition.z - fallangle.z * 20);
+                    transform.position = new Vector3(fallposition.x - fallangle.x * 20, 10, fallposition.z - fallangle.z * 20);
                     transform.localEulerAngles = new Vector3(0, transform.localEulerAngles.y, 0);
                     rg.velocity = Vector3.zero;
                     falltime = 0;
                 }
-                
+
                 finalfalltimer += Time.deltaTime;
-                falltime += Time.deltaTime; 
+                falltime += Time.deltaTime;
             }
             if (finalfalltimer > falllimit)
             {
@@ -370,7 +370,7 @@ public class t_Runner : MonoBehaviour
             }
             if (finalfalltimer2 > falllimit)
             {
-                finalfallposition = transform.position ;
+                finalfallposition = transform.position;
                 finalfalltimer2 = 0f;
             }
             if (finalfall == true)
@@ -379,7 +379,7 @@ public class t_Runner : MonoBehaviour
                 transform.position = new Vector3(finalfallposition.x - finalfallangle.x * 20, 10, finalfallposition.z - finalfallangle.z * 20);
                 transform.rotation = finalfallangle;
             }
-            //’n–Ê‚Ì‘®«‚É‚æ‚é‰e‹¿
+            //ï¿½nï¿½Ê‚Ì‘ï¿½ï¿½ï¿½ï¿½É‚ï¿½ï¿½eï¿½ï¿½
             if (isgroun == true)
             {
                 GameObject ground = hit.collider.gameObject;
@@ -431,20 +431,20 @@ public class t_Runner : MonoBehaviour
                     {
                         rg.angularDrag = 3f;
                     }
-                    
+
                 }
             }
         }
     }
-    
+
 }
 [System.Serializable]
 public class AxleInfo
 {
     public WheelCollider leftWheel;
     public WheelCollider rightWheel;
-    public bool motor; //‹ì“®—Ö‚©?
-    public bool steering; //ƒnƒ“ƒhƒ‹‘€ì‚ğ‚µ‚½‚Æ‚«‚ÉŠp“x‚ª•Ï‚í‚é‚©H
+    public bool motor; //ï¿½ì“®ï¿½Ö‚ï¿½?
+    public bool steering; //ï¿½nï¿½ï¿½ï¿½hï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ‚ï¿½ï¿½ÉŠpï¿½xï¿½ï¿½ï¿½Ï‚ï¿½é‚©ï¿½H
     public bool drift = false;
 }
 
