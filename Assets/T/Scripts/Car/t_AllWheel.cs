@@ -95,3 +95,4 @@ public class SF
     public float AsValue = 0.75f;
     public float Stiffness = 1f;
 }
+// やったー
