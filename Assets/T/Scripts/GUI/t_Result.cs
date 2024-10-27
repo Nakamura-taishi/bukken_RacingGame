@@ -15,7 +15,7 @@ public class t_Result : MonoBehaviour
     public GameObject BGM;
     public GameObject PlayerCAR;
     public bool once = false;
-    string gasUrl = "https://script.google.com/macros/s/AKfycbyKSjQbq5R-QiswheEITRciPkoXo_BvltFbOLTClLqtXZsEITYaS4aq9tK-8xISBWW-/exec";
+
     // Start is called before the first frame update
     void Start()
     {
@@ -49,47 +49,6 @@ public class t_Result : MonoBehaviour
         image.enabled = false;
         GoalTime_Text.text = GoalTime;
         Time.timeScale = 0;
-        if (once) { StartCoroutine(PostData());
-            once = false;
-        }
         
-    }
-    IEnumerator PostData()
-    {
-        //WWWForm型のインスタンスを生成
-        WWWForm form = new WWWForm();
-
-        //それぞれのInputFieldから情報を取得
-        string nameText = t_InputPlayer.Name;
-        string commentText = t_TimeCounter.GoalTime;
-        string Engine = PlayerCAR.GetComponent<t_Runner>().NowEngine.ToString();
-
-        //それぞれの値をカンマ区切りでcombinedText変数に代入
-        string combinedText = string.Join(",", nameText, commentText,Engine);
-
-        //formにPostする情報をvalというキー、値はcombinedTextで追加する
-        form.AddField("val", combinedText);
-
-        //UnityWebRequestを使ってGoogle Apps Script用URLにform情報をPost送信する
-        using (UnityWebRequest req = UnityWebRequest.Post(gasUrl, form))
-        {
-            //情報を送信
-            yield return req.SendWebRequest();
-            if (IsWebRequestSuccessful(req))
-            {
-                Debug.Log("success");
-            }
-            else
-            {
-                Debug.Log("error");
-            }
-        }
-    }
-
-    bool IsWebRequestSuccessful(UnityWebRequest req)
-    {
-        /*プロトコルエラーとコネクトエラーではない場合はtrueを返す*/
-        return req.result != UnityWebRequest.Result.ProtocolError &&
-               req.result != UnityWebRequest.Result.ConnectionError;
     }
 }

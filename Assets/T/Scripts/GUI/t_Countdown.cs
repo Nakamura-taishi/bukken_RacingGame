@@ -10,9 +10,11 @@ public class t_Countdown : MonoBehaviour
     public GameObject TextStart;
     public AudioClip startaudio;
     public GameObject BGM;
+    public m_CheckPointManager CheckPointManager;
     static public bool playing = false;
     async void Start()
     {
+        CheckPointManager.lastLap = t_LapSetting.laps;
         Time.timeScale = 0f;
         Panel.SetActive(false);
         Text3.SetActive(false);
