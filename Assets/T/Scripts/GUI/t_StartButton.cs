@@ -7,6 +7,6 @@ public class t_StartButton : MonoBehaviour
 {
     public void OnClick()
     {
-        SceneManager.LoadSceneAsync("InputPlayer");
+        SceneManager.LoadSceneAsync("Racing");
     }
 }
