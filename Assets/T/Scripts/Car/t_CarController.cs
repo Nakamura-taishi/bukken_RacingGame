@@ -1,6 +1,7 @@
 using System;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace UnityStandardAssets.Vehicles.Car
 {
@@ -56,23 +57,25 @@ namespace UnityStandardAssets.Vehicles.Car
         public float Revs { get; private set; }
         public float AccelInput { get; private set; }
         public GameObject wheels;
-        //—‰º§ŒÀŠÔ
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         public float falllimit;
-        //—‰ºƒ^ƒCƒ}[
+        //ï¿½ï¿½ï¿½ï¿½ï¿½^ï¿½Cï¿½}ï¿½[
         public float falltimer;
         public float falltime;
         public float finalfalltimer;
         public float finalfalltimer2;
-        //—‰º”»’è
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         public bool fall;
         public bool finalfall;
-        //•œŠˆˆÊ’u
+        //ï¿½ï¿½ï¿½ï¿½ï¿½Ê’u
         public Vector3 fallposition;
         public Vector3 fallangle;
         public Vector3 finalfallposition;
         public Quaternion finalfallangle;
-        //ˆê‰ñ§ŒÀ
+        //ï¿½ï¿½ñ§Œï¿½
         bool once1 = false;
+
+        public bool isVorCPressedNow;
         // Use this for initialization
         private void Start()
         {
@@ -379,12 +382,14 @@ namespace UnityStandardAssets.Vehicles.Car
         }
         private void FixedUpdate()
         {
-            //Ú’n”»’è
+            //ï¿½Ú’nï¿½ï¿½ï¿½ï¿½
             Ray ray = new Ray(transform.position, -transform.up);
             Ray ray2 = new Ray(transform.position + transform.up, transform.up);
             bool isgroun = Physics.Raycast(ray, out RaycastHit hit, 2.0f);
             bool iscrash = Physics.Raycast(ray2, out RaycastHit hit2, 2.0f);
             Debug.DrawRay(ray.origin, ray.direction, Color.red, 1);
+
+            isVorCPressedNow = (Keyboard.current.vKey.isPressed || Keyboard.current.cKey.isPressed);  
 
             if (isgroun == false || hit.collider.gameObject.tag == "Obstacle")
             {
@@ -415,7 +420,7 @@ namespace UnityStandardAssets.Vehicles.Car
                 finalfalltimer2 += Time.deltaTime;
                 falltime = 0;
             }
-            //ƒNƒ‰ƒbƒVƒ…‘¦•œ‹A
+            //ï¿½Nï¿½ï¿½ï¿½bï¿½Vï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½A
             //if (iscrash && !(hit2.collider.gameObject.tag == "Obstacle"))
             //{
             //   falltimer = 0;
@@ -453,7 +458,7 @@ namespace UnityStandardAssets.Vehicles.Car
                 transform.position = new Vector3(finalfallposition.x - finalfallangle.x * 20, 10, finalfallposition.z - finalfallangle.z * 20);
                 transform.rotation = finalfallangle;
             }
-            //’n–Ê‚Ì‘®«‚É‚æ‚é‰e‹¿
+            //ï¿½nï¿½Ê‚Ì‘ï¿½ï¿½ï¿½ï¿½É‚ï¿½ï¿½eï¿½ï¿½
             if (isgroun == true)
             {
                 GameObject ground = hit.collider.gameObject;
@@ -501,7 +506,7 @@ namespace UnityStandardAssets.Vehicles.Car
 
                     }
                     rg.drag = 0.1f;
-                    if (!(Input.GetKey(KeyCode.C) || Input.GetKey(KeyCode.V)))
+                    if (!(isVorCPressedNow))
                     {
                         rg.angularDrag = 3f;
                     }

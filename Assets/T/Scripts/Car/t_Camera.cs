@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class t_Camera : MonoBehaviour
 {
     public GameObject target; //�ǂ�������^�[�Q�b�g
+    
+    public bool isVPressedNow;
 
     void Start()
     {
@@ -16,8 +19,10 @@ public class t_Camera : MonoBehaviour
 
     void LateUpdate()
     {
+        isVPressedNow = Keyboard.current.vKey.isPressed;
+
         t_Runner cam = target.GetComponent<t_Runner>();
-        if ((Input.GetKey(KeyCode.V) || Input.GetAxis("ZL") != 0) && cam.falltimer == 0)
+        if ((isVPressedNow || Input.GetAxis("ZL") != 0) && cam.falltimer == 0)
         {
             if (cam.steering1 > 0)
             {
@@ -54,7 +59,7 @@ public class t_Camera : MonoBehaviour
         }
 
 
-        if ((Input.GetKey(KeyCode.V) || Input.GetAxis("ZL") != 0) && cam.falltimer == 0)
+        if ((isVPressedNow || Input.GetAxis("ZL") != 0) && cam.falltimer == 0)
         {
             if (cam.NowEngine >= 1)
             {
@@ -64,19 +69,19 @@ public class t_Camera : MonoBehaviour
                 }
             }
         }
-        else if (transform.localPosition.z < -6 && !(Input.GetKey(KeyCode.V) || Input.GetAxis("ZL") != 0))
+        else if (transform.localPosition.z < -6 && !(isVPressedNow || Input.GetAxis("ZL") != 0))
         {
             transform.Translate(0f, 0f, 0.2f);
         }
-        else if (transform.localPosition.z > -5.8f && !(Input.GetKey(KeyCode.V) || Input.GetAxis("ZL") != 0))
+        else if (transform.localPosition.z > -5.8f && !(isVPressedNow || Input.GetAxis("ZL") != 0))
         {
             transform.Translate(0f, 0f, -0.2f);
         }
-        if (transform.localPosition.x < 0 && !(Input.GetKey(KeyCode.V) || Input.GetAxis("ZL") != 0))
+        if (transform.localPosition.x < 0 && !(isVPressedNow || Input.GetAxis("ZL") != 0))
         {
             transform.Translate(0.04f, 0f, 0f);
         }
-        if (transform.localPosition.x > 0 && !(Input.GetKey(KeyCode.V) || Input.GetAxis("ZL") != 0))
+        if (transform.localPosition.x > 0 && !(isVPressedNow || Input.GetAxis("ZL") != 0))
         {
             transform.Translate(-0.04f, 0f, 0f);
         }

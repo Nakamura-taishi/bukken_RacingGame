@@ -5,6 +5,7 @@ using System.IO;
 using System.Threading;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
 /// <summary>
 /// �Ԃ̎d�l
 /// ��{����: W or��/S or�� �O�i/���,A or��/D or�� �^�C������/�E�ɋȂ���,C �u���[�L
@@ -64,6 +65,10 @@ public class t_Runner : MonoBehaviour
     bool once1 = false;
     //���x���
     public int cap = 60;
+
+    public Keyboard currentKey;
+
+    public Gamepad currentGp;
     public void Start()
     {
         NowEngine = MaxEngine;
@@ -83,6 +88,9 @@ public class t_Runner : MonoBehaviour
     {
         Rigidbody rg = this.GetComponent<Rigidbody>();
         float steering = SteeringAngle * Input.GetAxis("Horizontal");
+
+        
+
         //�p�x����
         if (Input.GetAxis("Horizontal") > 0)
         {
@@ -105,13 +113,15 @@ public class t_Runner : MonoBehaviour
     {
         Rigidbody rg = this.GetComponent<Rigidbody>();
         float motor = maxMotorTorque * Input.GetAxis("Vertical");
+        currentKey = Keyboard.current;
+        currentGp = Gamepad.current;
         //���ߖh�~
         if (NowEngine > MaxEngine)
         {
             NowEngine = MaxEngine;
         }
         //�h���t�g���s
-        if ((Input.GetKey(KeyCode.V) || Input.GetAxis("ZL") != 0) && falltimer == 0 && !(steering1 == 0))
+        if ((currentKey.vKey.isPressed || Input.GetAxis("ZL") != 0) && falltimer == 0 && !(steering1 == 0))
         {
             foreach (AxleInfo axleinfo in axleInfos)
             {
@@ -211,8 +221,9 @@ public class t_Runner : MonoBehaviour
             {
                 //�K�\�������g�p���ĉ���(0�ɂȂ�Ɖ����s��)
 
-                if (Input.GetKey(KeyCode.Space) || Input.GetAxis("ZR") != 0)
+                if (currentKey.spaceKey.isPressed || Input.GetAxis("ZR") != 0)
                 {
+                    Debug.Log("Space is pressed");
                     if ((NowEngine >= 1) && falltimer == 0 && !(motor1 == 0))
                     {
                         cap = 9999;
@@ -267,12 +278,12 @@ public class t_Runner : MonoBehaviour
                 }
                 else cartrail.SetActive(false);
             }
-            if (Input.GetKey(KeyCode.P))
+            if (currentKey.pKey.isPressed)
             {
                 SceneManager.LoadScene("Title");
             }
             //�u���[�L
-            if (Input.GetKey(KeyCode.C))
+            if (currentKey.cKey.isPressed)
             {
                 axleInfo.leftWheel.brakeTorque = breaking;
                 axleInfo.rightWheel.brakeTorque = breaking;
@@ -427,7 +438,7 @@ public class t_Runner : MonoBehaviour
 
                     }
                     rg.drag = 0.1f;
-                    if (!(Input.GetKey(KeyCode.C) || Input.GetKey(KeyCode.V)))
+                    if (!currentKey.cKey.isPressed || currentKey.vKey.isPressed)
                     {
                         rg.angularDrag = 3f;
                     }
